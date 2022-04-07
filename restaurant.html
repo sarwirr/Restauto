@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Livraison Sandwiches</title>
+    </head>
+    <body>
+        <h1>Livraison rapide de sandwiches : </h1>
+        <form enctype="multipart/form-data" action="./index.php" method="POST">
+            <div>
+                <input type="text" name="nom" placeholder="Nom" required />
+            </div>
+            <div>
+                <input
+                    type="text"
+                    name="prenom"
+                    placeholder="Prenom"
+                    required
+                />
+            </div>
+            <div>
+                <input
+                    type="number"
+                    name="nb"
+                    placeholder="Nombre de Sandwich"
+                    required
+                />
+            </div>
+            <div>
+                <input
+                    type="text"
+                    name="adresse"
+                    placeholder="Adresse"
+                    required
+                />
+            </div>
+            <div>
+                <select name="type" required>
+                    <option>Selectionner le type du sandwich</option>
+                    <option value="viande">Viande</option>
+                    <option value="poulet">Poulet</option>
+                    <option value="escalope">Escalope</option>
+                </select>
+            </div>
+            <div>Ingredients à ajouter:</div>
+            <div><input type="checkbox" name="harissa" />Harissa</div>
+            <div><input type="checkbox" name="salade" />Salade</div>
+            <div><input type="checkbox" name="mayo" />Mayo</div>
+            <div>CIN:</div>
+            <div><input type="file" name="cin" required /></div>
+            <div>
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+    </body>
+</html>
